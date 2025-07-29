@@ -60,6 +60,97 @@ table {
     --font: Playfair Display;
 }
 /* Global Styles */
+html {
+	font-family: var(--font);
+	background-color: var(--soft-white);
+	color: var(--midnight-blue);
+	max-width: 450px;
+	margin: 0 auto;
+}
+header, footer {
+	background-color: var(--midnight-blue);
+}
+header {
+	color: var(--soft-white);
+	text-align: center;
+}
+h1 {
+	font-size: 3em;
+	font-weight: bold;
+}
+h2 {
+    font-size: 2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	padding-left: 10px;
+}
+h3 {
+    font-size: 1.5em;
+	font-weight: bold;
+}
+p {
+    line-height: 1.35;
+}
+header p {
+	font-style: italic;
+}
+nav a {
+	text-decoration: none;
+	background-color: var(--champagne-gold);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: var(--midnight-blue);
+	font-weight: bold;
+}
+#AboutUs {
+	border-bottom: var(--champagne-gold) solid;
+	padding-top: 40px;
+}
+#AboutUs p, #Gallery p {
+	padding-left: 10px;
+}
+#Offerings div {
+	background-color: var(--olive-green);
+	color: var(--soft-white);
+	border-radius: 12px;
+	padding: 10px;
+	margin: 10px;
+}
+#Gallery {
+	border-bottom: var(--champagne-gold) solid;
+	padding-bottom: 20px;
+}
+#Gallery div {
+	border-radius: 12px;
+	background-color: var(--champagne-gold);
+	padding: 10px;
+	margin: 10px;
+}
+#Gallery div > p {
+	font-style: italic;
+}
+#ViewGallery {
+	text-decoration: none;
+	background-color: var(--olive-green);
+	color: var(--soft-white);
+	border-radius: 12px;
+	text-align: center;
+	margin-top: 20px;
+}
+footer {
+	text-align: center;
+	padding-bottom: 10px;
+	margin-top: 20px;
+}
+address {
+	color: var(--soft-white);
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+footer a {
+	text-decoration: none;
+	color: var(--champagne-gold);
+}
 
 /* Medium Media Query */
 
