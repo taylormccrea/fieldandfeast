@@ -94,13 +94,21 @@ p {
 header p {
 	font-style: italic;
 }
-nav a {
-	text-decoration: none;
+nav {
 	background-color: var(--champagne-gold);
+	padding: 10px;
+}
+nav ul {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: auto auto auto;
+}
+nav a {
+	text-align: center;
+	text-decoration: none;
 	color: var(--midnight-blue);
 	font-weight: bold;
+	font-size: 1.5em;
+	
 }
 #AboutUs {
 	border-bottom: var(--champagne-gold) solid;
@@ -121,18 +129,32 @@ nav a {
 	padding: 10px;
 	margin: 10px;
 }
+#BulletList {
+	list-style-type: disc;
+	padding-left: 20px;
+	padding-right: 20px;
+	line-height: 1.35;
+}
 #Gallery {
 	border-bottom: var(--champagne-gold) solid;
 	padding-bottom: 20px;
 }
 #Gallery div {
 	border-radius: 12px;
-	background-color: var(--champagne-gold);
-	padding: 10px;
 	margin: 10px;
+	text-align: center;
+	box-shadow: 3px 3px 5px gray;
+}
+#Gallery img {
+	margin: 0 auto;
+	width: 100%;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
 }
 #Gallery div > p {
 	font-style: italic;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #ViewGallery {
 	background-color: var(--olive-green);
@@ -154,14 +176,17 @@ address {
 	color: var(--soft-white);
 	padding-top: 40px;
 	padding-bottom: 40px;
+	line-height: 1.35;
 }
 footer a {
 	text-decoration: none;
 	color: var(--champagne-gold);
+	line-height: 1.35;
 }
 
 /* Medium Media Query */
-
+/* @media screen and (min-width: 600px) {} */
 /* Large Media Query */
-
+/* @media screen and (min-width: 900px) {} */
 /* Extra Large Media Query */
+/* @media screen and (min-width: 1200px) {} */
