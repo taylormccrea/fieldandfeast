@@ -64,7 +64,7 @@ html {
 	font-family: var(--font);
 	background-color: var(--soft-white);
 	color: var(--midnight-blue);
-	max-width: 450px;
+	max-width: 600px;
 	margin: 0 auto;
 }
 header, footer {
@@ -185,7 +185,34 @@ footer a {
 }
 
 /* Medium Media Query */
-/* @media screen and (min-width: 600px) {} */
+@media screen and (min-width: 600px) {
+	#Offerings {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	#Offerings h2 {
+		grid-column: span 2;
+	}
+	#Artisans {
+		grid-column: span 1;
+	}
+	#Dining {
+		grid-column: span 1;
+	}
+	#MonthlyBasket {
+		grid-column: span 2;
+	}
+	#Gallery {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	#Gallery h2, p {
+		grid-column: span 2;
+	}
+	#ViewGallery {
+		grid-column: span 2;
+	}
+}
 /* Large Media Query */
 /* @media screen and (min-width: 900px) {} */
 /* Extra Large Media Query */
