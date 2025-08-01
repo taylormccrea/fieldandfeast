@@ -64,7 +64,6 @@ html {
 	font-family: var(--font);
 	background-color: var(--soft-white);
 	color: var(--midnight-blue);
-	max-width: 900px;
 	margin: 0 auto;
 }
 header, footer {
@@ -221,4 +220,15 @@ footer a {
 	}
 }
 /* Extra Large Media Query */
-/* @media screen and (min-width: 1200px) {} */
+@media screen and (min-width: 1200px) {
+	#Gallery {
+		display: grid;
+		grid-template-columns: auto auto auto auto auto;
+	}
+	#Gallery h2, p {
+		grid-column: span 5;
+	}
+	#ViewGallery {
+		grid-column: span 5;
+	}
+}
